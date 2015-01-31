@@ -2,7 +2,13 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  outputPaths: {
+    app: {
+      html: '../index.html'
+    }
+  }
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
